@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bpr:release xmlns:bpr="http://www.blueprism.co.uk/product/release">
+    <bpr:name>PackageTestGit - Release 5</bpr:name>
+    <bpr:release-notes />
+    <bpr:created>2021-10-12 14:07:47Z</bpr:created>
+    <bpr:package-id>1091</bpr:package-id>
+    <bpr:package-name>PackageTestGit</bpr:package-name>
+    <bpr:user-created-by>ojimenez</bpr:user-created-by>
+    <bpr:contents count="2">
+        <object id="31f644bc-b371-4656-b695-4c95ce9438c0" name="spy test" xmlns="http://www.blueprism.co.uk/product/process"><process name="spy test" version="1.0" bpversion="6.10.1.35171" narrative="spy testing&#xD;&#xA;" byrefcollection="true" type="object" runmode="Exclusive"><appdef><element name="Application Root"><id>a229266a-f472-42c2-8fb4-2528e8b21ac2</id><type>Application</type><basetype>Application</basetype><datatype>unknown</datatype><diagnose>False</diagnose></element></appdef><view><camerax>0</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view><preconditions /><endpoint narrative="" /><subsheet subsheetid="941835ac-0271-4da0-99b6-c26b93cf2b7d" type="CleanUp" published="True"><name>Clean Up</name><view><camerax>0</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view></subsheet><subsheet subsheetid="3e2612f6-c655-42cd-aa16-9287d6dc7b99" type="Normal" published="False"><name>Action 1</name><view><camerax>0</camerax><cameray>0</cameray><zoom version="2">1.25</zoom></view></subsheet><stage stageid="c82e7d8a-d3d5-4d69-baae-d1f08d885e38" name="Start" type="Start"><loginhibit /><display x="15" y="-105" /><onsuccess>6342a472-ade2-4e8a-828e-07768ab27515</onsuccess></stage><stage stageid="6342a472-ade2-4e8a-828e-07768ab27515" name="End" type="End"><loginhibit /><display x="15" y="90" /></stage><stage stageid="2e4d1e19-090a-49dd-aa53-715c74362922" name="Stage1" type="ProcessInfo"><display x="-195" y="-105" w="150" h="90" /><references><reference>System.dll</reference><reference>System.Data.dll</reference><reference>System.Xml.dll</reference><reference>System.Drawing.dll</reference></references><imports><import>System</import><import>System.Drawing</import><import>System.Data</import></imports><language>visualbasic</language><globalcode><![CDATA[]]></globalcode><code><![CDATA[]]></code></stage><stage stageid="47263cec-48bf-4f4e-87c3-9d08840f229d" name="Clean Up" type="SubSheetInfo"><subsheetid>941835ac-0271-4da0-99b6-c26b93cf2b7d</subsheetid><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="10ac2ed4-370c-4026-ae78-64616f5e21b1" name="Start" type="Start"><subsheetid>941835ac-0271-4da0-99b6-c26b93cf2b7d</subsheetid><loginhibit /><display x="15" y="-105" /><onsuccess>922fb880-f212-464a-a37e-653dfcdbd144</onsuccess></stage><stage stageid="922fb880-f212-464a-a37e-653dfcdbd144" name="End" type="End"><subsheetid>941835ac-0271-4da0-99b6-c26b93cf2b7d</subsheetid><loginhibit /><display x="15" y="90" /></stage><stage stageid="e9babccf-392c-4fa6-8f34-04076cc7fc10" name="Action 1" type="SubSheetInfo"><subsheetid>3e2612f6-c655-42cd-aa16-9287d6dc7b99</subsheetid><display x="-195" y="-105" w="150" h="90" /></stage><stage stageid="6444f67f-eb13-4f65-9e66-aa363ec93172" name="Start" type="Start"><subsheetid>3e2612f6-c655-42cd-aa16-9287d6dc7b99</subsheetid><loginhibit /><display x="15" y="-105" /></stage><stage stageid="3c17862b-cf57-4ca1-b252-b21d5e5732ed" name="End" type="End"><subsheetid>3e2612f6-c655-42cd-aa16-9287d6dc7b99</subsheetid><loginhibit /><display x="15" y="90" /></stage><stage stageid="13acc836-c211-48c4-abea-d6b22d399d1f" name="" type="Note"><subsheetid>941835ac-0271-4da0-99b6-c26b93cf2b7d</subsheetid><narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative><display x="-180" y="60" w="180" h="230" /></stage><stage stageid="e6cbc9ec-1653-4fb5-b297-3af38671c80f" name="" type="Note"><narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative><display x="-180" y="60" w="180" h="230" /></stage></process></object>
+        <object-group id="1e4b2e9d-5510-45fe-82b0-e085e44b8f2f" name="Default/BP Training Oscar" isDefaultGroup="False" xmlns="http://www.blueprism.co.uk/product/object-group">
+            <members>
+                <object id="31f644bc-b371-4656-b695-4c95ce9438c0" />
+            </members>
+        </object-group>
+    </bpr:contents>
+</bpr:release>
