@@ -1,0 +1,49 @@
+﻿<process name="0728-01" version="1.0" bpversion="6.7.1.21315" narrative="0728-01" byrefcollection="true" preferredid="732980be-cbfe-4a1b-ad4e-6a0fcbc3081e">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="42cddaad-956d-450f-a796-f2584efc84d3" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>3e8de8ca-729e-44c3-a027-5f6a544d2da1</onsuccess>
+  </stage>
+  <stage stageid="a19c4bd6-8d96-4f4b-a187-6976e524be2f" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="ac72033b-403b-4b47-9766-b05d6f99e3ae" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="844d8a46-7155-4a90-b3b2-9c8159463fcd" name="firts paper" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="30" w="90" h="60" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="73527f8b-d999-45db-a765-94c67c93f851" name="second paper" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="90" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9e8156ea-7a84-4ab7-9a55-c960902c1eb8" name="final" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="135" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3e8de8ca-729e-44c3-a027-5f6a544d2da1" name="Calc1" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>a19c4bd6-8d96-4f4b-a187-6976e524be2f</onsuccess>
+    <calculation expression="[firts paper]+[second paper]" stage="final" />
+  </stage>
+</process>
